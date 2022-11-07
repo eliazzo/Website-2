@@ -1,0 +1,53 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar{
+    background-color: rgb(0, 255, 0);
+}
+
+
+.nav-list{
+    display:flex;
+    margin-right: 2rem;
+}
+
+.welcome-section{
+    font-family: 'Playfair Display', serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    /* vh creates sets element to  fill up the entire viewport's height */ 
+    background-color: rgb(203, 120, 197);
+}
+
+.projects-title{
+    background-color: rgb(0, 234, 255);
+}
+
+.gallery{
+    border: 1px solid black;
+    display: grid;
+}
