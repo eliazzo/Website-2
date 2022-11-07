@@ -5,23 +5,26 @@ body{
     line-height: 1.4;
 }
 
-.nav{
+.navbar{
     display: flex;
     justify-content: flex-end;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-}
-
-.navbar{
+    height: 100px;
     background-color: rgb(0, 255, 0);
 }
 
 
-.nav-list{
+.navbar-list{
     display:flex;
+    padding-inline-start: 40px;
     margin-right: 2rem;
+}
+
+li{
+    border: solid black 1px;
 }
 
 .welcome-section{
