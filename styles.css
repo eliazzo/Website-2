@@ -22,7 +22,7 @@ body{
 }
 
 .navbar-list{
-    display:flex;
+    display: flex;
     padding-inline-start: 40px;
     margin-right: 2rem;
 }
@@ -30,6 +30,7 @@ body{
 .navbar-list li{
     margin-left: 10px;
     margin-right: 10px;
+    
 /* spaces the li element */
 }
 
@@ -43,6 +44,7 @@ ul{
     font-size: 20px;
     font-family: "times new roman";
     color: white;
+ 
 }
 /* styling the link: */
 
@@ -93,6 +95,15 @@ ul{
     text-align: center;
 }
 
+#who-am-I img{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ #fact-file{
+    display: flex;
+    flex-wrap: wrap;
+} 
 
 
 #fact-file h1, #fact-file h2 {
@@ -103,36 +114,37 @@ ul{
     text-align: left;
 }
 
-#fact-file h2{
-    text-align: right;
-}
-
-.who-am-I p{
+#fact-file p{
     text-align: right;
     font-size: 20px;
-    border: 1px solid black;
 }
 
 /* why I want to get into coding */
 #why{
-    height: auto;
-    background-color: yellow;
-}
-
-#my-degree{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    border: 1px solid black;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: yellow;
+    padding-top: 100px;
+ 
 }
 
-#my-degree #spanish, #my-degree #linguistics{
-    justify-content: center;
-    border: 1px solid black;
+#why h1 {
+    text-align: center;
+    color: hotpink;
+    font-family: sans-serif;
 }
 
-#my-degree #spanish p, #my-degree #linguistics p{
+
+
+#why #language, #why #learning{
+    justify-content: center;
+    border: 1px solid black;
+    
+}
+
+#why #language p, #why #learning p{
     text-align: center;
     width: 50%;
     border: solid 1px black;
@@ -166,7 +178,7 @@ ul{
 }
 
 #joy h1{
-    color: white;
+    color: pink;
     font-size: 15rem;
     font-family: sans-serif;
 }
@@ -192,3 +204,4 @@ ul{
     margin-left: 10px;
     margin-right: 10px;
 }
+
