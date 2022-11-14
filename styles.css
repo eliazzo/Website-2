@@ -83,16 +83,24 @@ ul{
 
 .who-am-I{
     display: flex;
+    flex-direction: column;
+    width: 100%;
     background-color: hotpink;
     color: white;
     font-family: "times new roman";
     border: solid 1px blue;
     padding-top: 100px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 #who-am-I h1{
-    text-align: center;
+    justify-content: center;
+}
+
+#who-am-I-content{
+    display: flex;
+    flex-direction: row;
 }
 
 #who-am-I img{
@@ -100,13 +108,15 @@ ul{
     flex-wrap: wrap;
 }
 
+
+
  #fact-file{
     display: flex;
     flex-wrap: wrap;
 } 
 
 
-#fact-file h1, #fact-file h2 {
+#fact-file h2, #fact-file h3 {
     color: red;
     border: solid 1px black;
     font-family: sans-serif;
@@ -124,6 +134,7 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     height: auto;
     background-color: yellow;
     padding-top: 100px;
@@ -136,19 +147,24 @@ ul{
     font-family: sans-serif;
 }
 
+#why h2 {
+    font-family: sans-serif;
+    color: red;
+}
+
+#why p {
+    font-family: times;
+    color: red;
+    size: 10px;
+    text-align: center;
+    border: solid 1px black;
+
+}
 
 
 #why #language, #why #learning{
     justify-content: center;
     border: 1px solid black;
-    
-}
-
-#why #language p, #why #learning p{
-    text-align: center;
-    width: 50%;
-    border: solid 1px black;
-
     
 }
 
@@ -170,18 +186,7 @@ ul{
     text-decoration: none; 
 }
 
-/* Joy */
 
-#joy{
-    background-image: url("hockney.jpg");
-    height: 400px
-}
-
-#joy h1{
-    color: pink;
-    font-size: 15rem;
-    font-family: sans-serif;
-}
 
 /* Contact */
 
@@ -189,19 +194,20 @@ ul{
     text-align: center;
     font-family: "times new roman";
     letter-spacing: 2px;
+    background-image: url("hockney.jpg");
+    height: auto;
+    color: white
 }
 
 #contact h1{
-    font-size: 5rem;
-    color: hotpink;
-
-
+    font-size: 8rem;
+    font-family: sans-serif;
 }
 
 #contact-links a{
     text-decoration: none;
-    color: hotpink;
     margin-left: 10px;
     margin-right: 10px;
+    color: white;
 }
 
