@@ -58,6 +58,7 @@ ul{
 
 .welcome-section{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -208,6 +209,9 @@ ul{
 /* Contact */
 
 #contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     font-family: "times new roman";
     letter-spacing: 2px;
