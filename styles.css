@@ -6,6 +6,7 @@ body{
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.4;
+    background-color: #f5f5f5;
 }
 
 .navbar{
@@ -18,11 +19,12 @@ body{
     width: 100%;
     /* sets the width to the length of the page */
     height: 100px;
-    background-color: rgb(0, 255, 0);
+    background-color: #7393b3a3;
 }
 
 .navbar-list{
     display: flex;
+    flex-wrap: wrap;
     padding-inline-start: 40px;
     margin-right: 2rem;
 }
@@ -65,7 +67,8 @@ ul{
 }
 
 #welcome{
-    font-family: "times new roman";
+    font-family: sans-serif;
+    font-size: 2rem;
     letter-spacing: 2px;
     color: hotpink;
     display: inline-block;
@@ -74,8 +77,15 @@ ul{
     
 }
 
+#welcome-image{
+    background-image: "hockney-background";
+    width: 100%;
+
+}
+
 #welcome h2{
-    font-size: 15px;
+    font-family: 'times';
+    font-size: 20px;
 
 }
 
@@ -85,10 +95,8 @@ ul{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: hotpink;
-    color: white;
-    font-family: "times new roman";
-    border: solid 1px blue;
+    color: red;
+    font-family: sans-serif;
     padding-top: 100px;
     letter-spacing: 2px;
     text-align: center;
@@ -106,22 +114,33 @@ ul{
 #who-am-I img{
     display: flex;
     flex-wrap: wrap;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0% 0% 0% 5%;
 }
 
 
 
  #fact-file{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 2%;
+    background-color: #B6D0E2;
 } 
 
 
 #fact-file h2, #fact-file h3 {
-    color: red;
-    border: solid 1px black;
     font-family: sans-serif;
     font-size: 30px;
     text-align: left;
+}
+
+#fact-file h3{
+    font-size: 20px;
+    text-align: right;
 }
 
 #fact-file p{
@@ -138,6 +157,7 @@ ul{
     height: auto;
     background-color: yellow;
     padding-top: 100px;
+    margin-top: 10px;
  
 }
 
@@ -152,20 +172,17 @@ ul{
     color: red;
 }
 
-#why p {
-    font-family: times;
-    color: red;
-    size: 10px;
-    text-align: center;
-    border: solid 1px black;
 
+#why #language, #why #learning{ 
+    margin: 0px 10px 0px 10px;
+    border: 1px solid black;  
+    color: red;
+    font-size: 20px;
 }
 
 
-#why #language, #why #learning{
-    justify-content: center;
-    border: 1px solid black;
-    
+#why #language #translation-example{
+    text-align: right;
 }
 
 /* projects*/
