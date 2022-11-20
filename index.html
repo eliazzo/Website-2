@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="website.css">
     <script src="website.js" defer></script>
+
+    <!-- Links to feature js and css -->
+    <link rel="stylesheet" href="./../Feature/feature.css">
+    <script src="./../Feature/feature.js" defer></script>
     </head>
+
+   
 
 <body>
     <!--NAVIGATION BAR-->
@@ -25,7 +31,9 @@
     <!--WELCOME-->
     <div id="welcome-section">
 
-      <div id="welcome-image"></div>
+      <div id="welcome-image">
+        <img src="hockney background.jpg"> 
+      </div>
       
       <div id="welcome-text">
         <h1>Elisabeth Azzopardi</h1>
@@ -41,8 +49,9 @@
           <h1 id="who-am-I-title">Who am I?</h1>
         
         <div id="who-am-I-content">
-              <div id="image">
+              <div id="image-wrapper">
                   <img src="me chess.png">
+                  <p id="me-chess-text">Seville, June 2022, mostly likely losing a game of chess.</p>
               </div>
 
               <div id="fact-file">
@@ -78,14 +87,57 @@
     </div>
  
 
-    <!--PROJECTS FLEXBOX-->
+  <!--PROJECTS-->
         <div id="projects" class="projects">
           <h2 class="projects-title">Check out some of my FAC projects</h2>
             <a href="https://eliazzo.github.io/Project-gallery/">FAC gallery</a>
-        </div>
-    <!--END-->
 
-    </main>
+<!-- START OF FEATURE -->
+          <div id="feature-container"> 
+    
+              <div id="position-label">
+                  <p id="position">1</p>
+                  <p>/6</p>
+              </div>
+             
+              <div id="carousel-container">
+                  <ul id="image-list">
+                      <li><img src="splash.png"></li>
+                      <li><img src="ring 2.png"></li>
+                      <li><img src="garden.png"></li>
+                      <li><img src="lawn.png"></li>
+                      <li><img src="santa.png"></li>
+                      <li><img src="garrowby hill.png"></li>
+                  </ul>
+                  <button id="previous" onclick="previousImage()"><<</button>   
+                  <button id="next" onclick="nextImage()">>></button>  
+              </div>
+          
+              <div id="dot-container">
+                  <button id="splash-button" class="dots" onclick="splashPositionChange()"></button>
+                  <button id="ring-button" class="dots" onclick="ringPositionChange()"></button>
+                  <button id="garden-button" class="dots" onclick="gardenPositionChange()"></button>
+                  <button id="lawn-button" class="dots" onclick="lawnPositionChange()"></button>
+                  <button id="santa-button" class="dots" onclick="santaPositionChange()"></button>
+                  <button id="garrowby-button" class="dots" onclick="garrowbyPositionChange()"></button>
+              </div>
+              
+              <div id="image-description">
+                  <p id="description">A Bigger Splash 1967</p>
+              </div> 
+          
+              <div id="pause-play-buttons">
+                  <button id="pause" onclick="pause()">II</button>
+                  <button id="play" onclick="play()">&#9658</button>
+              </div>
+          
+          </div>
+<!-- END OF FEATURE -->
+
+        </div>
+<!-- END OF PROJECTS-->
+
+    
 
     <!--CONTACT-->
         <div id="contact" class="contact">
@@ -99,6 +151,8 @@
           </div>
         </div>
     <!--END-->
+
+  </main>
     
     
 </body>
