@@ -255,18 +255,6 @@ ul{
     color: white;
 }
 
-/* Property changes to fit phone screen size*/
-
-/* @media (max-width: 500px) {
-.navbar-list{
-    display: block;
-}
-
-change text size - contact Details 
-ELisabeth text
-
-    
-} */
 
 @media (max-width: 500px) {
     .navbar{
