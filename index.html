@@ -7,14 +7,8 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="website.css">
     <script src="website.js" defer></script>
-
-    <!-- Links to feature js and css -->
-    <link rel="stylesheet" href="./../Feature/feature.css">
-    <script src="./../Feature/feature.js" defer></script>
     </head>
-
-   
-
+ 
 <body>
     <!--NAVIGATION BAR-->
   <nav id="navbar" class="navbar">
@@ -71,6 +65,25 @@
       </div>
     <!--END-->
 
+    <!-- Yoga GIF carousel -->
+  <div id="yoga-feature">
+    <div id="yoga-image-carousel">
+      <ul id="yoga-list">
+        <li><img src="Kivu.JPG" alt="Lake-Kivu"></li>
+        <li><img src="boat.JPG" alt="boat"></li>
+        <li><img src="sisal.JPG" alt="died-sisal"></li>
+        <li><img src="pigs.jpg" alt="pigs"></li>
+      </ul>
+    </div>
+      <div id="yoga-dot-container">
+        <button id="image0-button" class="dots" onclick="imageChange0()"></button>
+        <button id="image1-button" class="dots" onclick="imageChange0()"></button>
+        <button id="image2-button" class="dots" onclick="imageChange2()"></button>
+        <button id="image3-button" class="dots" onclick="imageChange3()"></button>
+      </div>
+  </div>
+   
+
     <!-- WHY I WANT TO GET INTO CODING-->
     <div id="why">
             <h1>Why I want to get into web development </h1>
@@ -91,49 +104,6 @@
         <div id="projects" class="projects">
           <h2 class="projects-title">Check out some of my FAC projects</h2>
             <a href="https://eliazzo.github.io/Project-gallery/">FAC gallery</a>
-
-<!-- START OF FEATURE -->
-          <div id="feature-container"> 
-    
-              <div id="position-label">
-                  <p id="position">1</p>
-                  <p>/6</p>
-              </div>
-             
-              <div id="carousel-container">
-                  <ul id="image-list">
-                      <li><img src="splash.png"></li>
-                      <li><img src="ring 2.png"></li>
-                      <li><img src="garden.png"></li>
-                      <li><img src="lawn.png"></li>
-                      <li><img src="santa.png"></li>
-                      <li><img src="garrowby hill.png"></li>
-                  </ul>
-                  <button id="previous" onclick="previousImage()"><<</button>   
-                  <button id="next" onclick="nextImage()">>></button>  
-              </div>
-          
-              <div id="dot-container">
-                  <button id="splash-button" class="dots" onclick="splashPositionChange()"></button>
-                  <button id="ring-button" class="dots" onclick="ringPositionChange()"></button>
-                  <button id="garden-button" class="dots" onclick="gardenPositionChange()"></button>
-                  <button id="lawn-button" class="dots" onclick="lawnPositionChange()"></button>
-                  <button id="santa-button" class="dots" onclick="santaPositionChange()"></button>
-                  <button id="garrowby-button" class="dots" onclick="garrowbyPositionChange()"></button>
-              </div>
-              
-              <div id="image-description">
-                  <p id="description">A Bigger Splash 1967</p>
-              </div> 
-          
-              <div id="pause-play-buttons">
-                  <button id="pause" onclick="pause()">II</button>
-                  <button id="play" onclick="play()">&#9658</button>
-              </div>
-          
-          </div>
-<!-- END OF FEATURE -->
-
         </div>
 <!-- END OF PROJECTS-->
 

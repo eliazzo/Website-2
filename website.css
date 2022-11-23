@@ -169,6 +169,70 @@ ul{
     letter-spacing: 1.5px;
 }
 
+/* Yoga carousel */
+#yoga-feature{
+    display: flex;
+    /* justify-content: center; */
+    margin: 20px 0 0 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#yoga-image-carousel{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+     /* any content which overflows from the yoga-image "viewer" is made invisible */
+}
+
+
+#yoga-image-carousel ul{
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 500%;
+    transition: left 1s;
+    /* sets a period of 1s when changes are made to left property */
+    margin: 0;   
+    padding: 0;
+}
+
+
+#yoga-image-carousel ul li{
+    position: relative;
+    height: 100%;
+    float: left;
+     /* specifies the li elements float to the left */
+}
+
+#yoga-image-carousel ul li img{
+    width: 400px;
+    height: 400px;
+}
+
+#yoga-dot-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
+
+#yoga-dot-container button {
+    background-color: white;
+    border: solid rgb(136, 126, 126) 1px;
+    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+#yoga-dot-container button:hover{
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.5;
+}
+
 /* Why I want to get into coding */
 #why{
     display: flex;
