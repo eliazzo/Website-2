@@ -176,6 +176,7 @@ ul{
     margin: 20px 0 0 20px;
     flex-direction: column;
     align-items: center;
+    padding-top: 150px;
 }
 
 #yoga-image-carousel{
@@ -191,7 +192,7 @@ ul{
     position: relative;
     list-style: none;
     height: 100%;
-    width: 500%;
+    width: 10000%;
     transition: left 1s;
     /* sets a period of 1s when changes are made to left property */
     margin: 0;   
@@ -274,23 +275,89 @@ ul{
 /* Projects*/
 
 .projects{
-    padding-top: 100px;
+    padding: 100px 0 100px 0;
     text-align: center;
     height: auto;
-    font-size: 20px;
 }
 
-.projects-title{
+#projects-title {
     color: hotpink;
     font-family: sans-serif;
     letter-spacing: 2px;
-    font-size: 30px;
 }
 
 .projects a{
     text-decoration: none; 
+} 
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
 }
 
+#projects #gallery .gallery{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    box-shadow: 10px 10px 5px #b5b5b5;
+    border-radius: 50px;
+}
+
+#projects #gallery .gallery h1{
+    text-align: left;
+    color: #38978e;
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+
+#projects #gallery .gallery:hover {
+    box-shadow: 0 0 4px 4px rgba(0, 140, 186, 0.5);
+    transition: 1s;
+}
+
+#projects #gallery .gallery img {
+    width: 100%;
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+#projects #gallery .gallery button{
+    border: none;
+    color: #228B22;;
+    font-family: 'times';
+    font-size: 100%;
+    width: auto;
+    height: auto;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+#gallery-link {
+    margin-top: 100px;
+}
+
+#gallery-link a{
+    padding: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    background-image: url("Queen\ Anne.png");
+    
+}
 
 
 /* Contact */
@@ -303,7 +370,7 @@ ul{
     font-family: "palatino";
     letter-spacing: 2px;
     background-image: url("hockney.jpg");
-    height: auto;
+    height: 100vh;
     color: white
 }
 

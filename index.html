@@ -15,7 +15,8 @@
     <ul class="navbar-list">
       <li><a href="#welcome-section">Welcome</a></li>
       <li><a href="#who-am-I">Who am I?</a></li>
-      <li><a href="#why">Why?</a></li>
+      <li><a href="#yoga-feature">Gallery</a></li>
+      <li><a href="#why">Why</a></li>
       <li><a href="#projects">FAC Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -45,7 +46,7 @@
         <div id="who-am-I-content">
               <div id="image-wrapper">
                   <img src="me chess.png">
-                  <p id="me-chess-text">Seville, June 2022, mostly likely losing a game of chess.</p>
+                  <p id="me-chess-text">Seville, June 2021, mostly likely losing a game of chess.</p>
               </div>
 
               <div id="fact-file">
@@ -69,17 +70,23 @@
   <div id="yoga-feature">
     <div id="yoga-image-carousel">
       <ul id="yoga-list">
-        <li><img src="Kivu.JPG" alt="Lake-Kivu"></li>
-        <li><img src="boat.JPG" alt="boat"></li>
-        <li><img src="sisal.JPG" alt="died-sisal"></li>
-        <li><img src="pigs.jpg" alt="pigs"></li>
+        <li><img src="Kivu.JPG" alt="Lake_Kivu"></li>
+        <li><img src="boat.JPG" alt="Kivu_boat"></li>
+        <li><img src="sisal.JPG" alt="orange_dyed_sisal"></li>
+        <li><img src="budva jungle.jpg" alt="budva_jungle"></li>
+        <li><img src="dog.jpg" alt="golden_dog"></li>
+        <li><img src="rwanda trees.JPG" alt="trees_Rwanda"></li>
+        <li><img src="rwanda woman.JPG" alt="walking_woman_Rwanda"></li>
       </ul>
     </div>
       <div id="yoga-dot-container">
         <button id="image0-button" class="dots" onclick="imageChange0()"></button>
-        <button id="image1-button" class="dots" onclick="imageChange0()"></button>
+        <button id="image1-button" class="dots" onclick="imageChange1()"></button>
         <button id="image2-button" class="dots" onclick="imageChange2()"></button>
         <button id="image3-button" class="dots" onclick="imageChange3()"></button>
+        <button id="image4-button" class="dots" onclick="imageChange4()"></button>
+        <button id="image5-button" class="dots" onclick="imageChange5()"></button>
+        <button id="image6-button" class="dots" onclick="imageChange6()"></button>
       </div>
   </div>
    
@@ -101,10 +108,35 @@
  
 
   <!--PROJECTS-->
-        <div id="projects" class="projects">
-          <h2 class="projects-title">Check out some of my FAC projects</h2>
-            <a href="https://eliazzo.github.io/Project-gallery/">FAC gallery</a>
+<div id="projects" class="projects">
+
+  <h2 id="projects-title">Check out some of my FAC projects</h2>
+    
+  <div id="gallery">
+        <div class="gallery" id="hobby-section">
+          <h1>Hobby Page</h1>
+          <a href="https://eliazzo.github.io/Hobby-page/"><img src="Hobby image.jpg" alt="hobby_link"></a>
+          <button id="hobby-text" onclick="revealHobbyText()">What's it all about?</button>
         </div>
+
+        <div class="gallery" id="movie-section">
+          <h1>Movie Data</h1>
+          <a href="https://eliazzo.github.io/Movie-data/"><img src="darjeeling.jpg" alt="movie_link"></a>
+          <button id="movie-text" onclick="revealMovieText()">What's it all about?</button>
+        </div>
+
+        <div class="gallery" id="feature-section">
+          <h1>Feature</h1>
+          <a href="https://eliazzo.github.io/Feature-2/"><img src="splash.png" alt="feature_link"></a>
+          <button id="feature-text" onclick="revealFeatureText()">What's it all about?</button>
+        </div>
+    </div>
+
+  <div id="gallery-link">
+    <a href="https://eliazzo.github.io/Project-gallery/">FAC Project Gallery</a>
+  </div>
+
+</div>
 <!-- END OF PROJECTS-->
 
     
@@ -117,7 +149,7 @@
           <div id="contact-links">
             <a href="https://github.com/eliazzo" class="contact-button">Github</a>
             <a href="https://www.linkedin.com/in/elisabeth-azzopardi-b3496a247/" class="contact-button">LinkedIn</a>
-            <a href="" class="contact-button">CV</a>
+            <a href="CV FAC.pdf" class="contact-button">CV</a>
           </div>
         </div>
     <!--END-->
