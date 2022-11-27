@@ -49,6 +49,7 @@ function changeTextColor(){
 
 
 
+
 // Image carousel
 
 let imageList = document.getElementById("image-list");
@@ -108,4 +109,15 @@ function revealFeatureText(){
     document.getElementById("feature-text").innerText= featureText
 }
 
+//Revert gallery card buttons to original text on mouseout
+function buttonTextOriginal(){
+    const originalButtonText = "What's it all about?";
+    const buttonList = document.querySelectorAll(".button-text");
+    console.log(buttonList)
+
+    for(let i = 0; i < buttonList.length; i++){
+        buttonList[i].innerHTML = originalButtonText
+    }
+
+}
 
