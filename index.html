@@ -66,10 +66,10 @@
       </div>
     <!--END-->
 
-    <!-- Yoga GIF carousel -->
-  <div id="yoga-feature">
-    <div id="yoga-image-carousel">
-      <ul id="yoga-list">
+    <!-- Image gallery-->
+  <div id="image-gallery">
+    <div id="image-carousel">
+      <ul id="image-list">
         <li><img src="Kivu.JPG" alt="Lake_Kivu"></li>
         <li><img src="boat.JPG" alt="Kivu_boat"></li>
         <li><img src="sisal.JPG" alt="orange_dyed_sisal"></li>
@@ -79,7 +79,7 @@
         <li><img src="rwanda woman.JPG" alt="walking_woman_Rwanda"></li>
       </ul>
     </div>
-      <div id="yoga-dot-container">
+      <div id="dot-container">
         <button id="image0-button" class="dots" onclick="imageChange0()"></button>
         <button id="image1-button" class="dots" onclick="imageChange1()"></button>
         <button id="image2-button" class="dots" onclick="imageChange2()"></button>
@@ -93,17 +93,35 @@
 
     <!-- WHY I WANT TO GET INTO CODING-->
     <div id="why">
-            <h1>Why I want to get into web development </h1>
+            <h1 id="why-heading">Why I want to get into web development </h1>
           <div id="language">
-                <h2>Language</h2>
+                <h2 id="language-title">Language</h2>
                 <p id="language-text"></p>
                 <p id="translation-example"></p>
                 <p id="language-text-continued"></p>
           </div>
           <div id="learning">
-                <h2>Learning</h2>
+                <h2 id="learning-title">Learning</h2>
                 <p id="learning-text"></p>
           </div>
+    </div>
+
+    <!-- COLOR PICKER -->
+    <div id="color-picker">
+      <h1>Not happy with my colour scheme?</h1>
+      <h2>Make it your own!</h2>
+
+      <div id="color-label">
+
+        <input type="color" id="heading-color" value="#FF69B4" onchange="changeHeadingColor()">
+        <label for="heading-color">Title</label>
+
+        <input type="color" id="text-background-color" value="#FFFF00" onchange="changeBackroundColor()">
+        <label for="background-color">Background</label>
+
+        <input type="color" id="text-color" value="#FF0000" onchange="changeTextColor()">
+        <label for="text-color">Text</label>
+      </div>
     </div>
  
 

@@ -10,44 +10,83 @@ document.getElementById("translation-example").innerText = "Harriet gave the par
 document.getElementById("language-text-continued").innerText = "It was intimidating at first. But I threw myself into it and eventually found my feet. I suppose it's given me the confidence to pursue a career in coding."
 document.getElementById("learning-text").innerText = "As the above text hopefully demonstrates, I loved being an undergraduate. Learning brings me great joy and if education was free I could happily spend the rest of my life moving from degree to degree. I often thought about (and still think about) applying for a masters. However, while I am thrilled to have the skills to analyse and critique the use of the Supernatural in Latin American fiction, or translate English lexemes using lamda expression (among other, obscure skills), I am hesitant to pursue more education without a definitive end goal. That's where Founders and Coders comes in. Since joining the FAC community I have rediscovered a space where peer learning and support is at it's core. I am delighted with the prospect of a career that involves daily research and learning. Joining FAC would enable me to continute my education, learn a multitude of new skills and provide me with an exciting career path - all of which I am currently searching for!";
 
-// Yoga carousel
 
-let yogaList = document.getElementById("yoga-list");
-const yogaListItems = document.querySelectorAll("li");
-const numberOfYogaListItems = yogaListItems.length;
+//Color changes
+function changeHeadingColor(){
+    const newHeadingColor = document.getElementById("heading-color").value;
+    const whyHeading = document.getElementById("why-heading");
+    whyHeading.style.color = newHeadingColor;
+}
+function changeBackroundColor(){
+    const newBackgroundColor = document.getElementById("text-background-color").value;
+    const whyBackground = document.getElementById("why");
+    whyBackground.style.backgroundColor = newBackgroundColor;
+}
+function changeTextColor(){
+    const newTextColor = document.getElementById("text-color").value
+    // console.log(newColor)
+    const languageTitle = document.getElementById("language-title");
+    // console.log(languageTitle);
+    languageTitle.style.color = newTextColor;
+
+    const languageText = document.getElementById("language-text");
+    languageText.style.color = newTextColor;
+
+    const translationExample = document.getElementById("translation-example");
+    translationExample.style.color = newTextColor;
+
+    const languageTextContinued = document.getElementById("language-text-continued");
+    languageTextContinued.style.color = newTextColor;
+
+    const learningTitle = document.getElementById("learning-title");
+    learningTitle.style.color = newTextColor;
+
+    const learningText = document.getElementById("learning-text");
+    learningText.style.color = newTextColor;
+   }
+
+//END
+
+
+
+// Image carousel
+
+let imageList = document.getElementById("image-list");
+// const imageListItems = document.querySelectorAll("li");
+// const numberOfImageListItems = imageListItems.length;
 
 function imageChange0(){
-    yogaList.style.left = ("0px"); // Sets the css left property to 0px
+    imageList.style.left = ("0px"); // Sets the css left property to 0px
     imagePosition = 0;
 }
 
 function imageChange1(){
-    yogaList.style.left = ("-400px"); // Sets the css left property to -400px
+    imageList.style.left = ("-400px"); // Sets the css left property to -400px
     imagePosition = 1;
 }
 
 function imageChange2(){
-    yogaList.style.left = ("-800px"); // Sets the css left property to -800px
+    imageList.style.left = ("-800px"); // Sets the css left property to -800px
     imagePosition = 2;
 }
 
 function imageChange3(){
-    yogaList.style.left = ("-1200px"); // Sets the css left property to -800px
+    imageList.style.left = ("-1200px"); // Sets the css left property to -800px
     imagePosition = 3;
 }
 
 function imageChange4(){
-    yogaList.style.left = ("-1600px"); // Sets the css left property to -800px
+    imageList.style.left = ("-1600px"); // Sets the css left property to -800px
     imagePosition = 4;
 }
 
 function imageChange5(){
-    yogaList.style.left = ("-2000px"); // Sets the css left property to -800px
+    imageList.style.left = ("-2000px"); // Sets the css left property to -800px
     imagePosition = 5;
 }
 
 function imageChange6(){
-    yogaList.style.left = ("-2400px"); // Sets the css left property to -800px
+    imageList.style.left = ("-2400px"); // Sets the css left property to -800px
     imagePosition = 6;
 }
 
